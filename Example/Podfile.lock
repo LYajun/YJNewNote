@@ -1,0 +1,16 @@
+PODS:
+  - YJNewNote (0.1.0)
+
+DEPENDENCIES:
+  - YJNewNote (from `../`)
+
+EXTERNAL SOURCES:
+  YJNewNote:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YJNewNote: 1e68357d12ec8dac2858db225a5f0059448d5099
+
+PODFILE CHECKSUM: fe298bfbce4a7d2d8816c7bbba555c0236e11d93
+
+COCOAPODS: 1.9.1

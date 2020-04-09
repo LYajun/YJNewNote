@@ -1,0 +1,6 @@
+framework module YJNewNote {
+  umbrella header "YJNewNote-umbrella.h"
+
+  export *
+  module * { export * }
+}
