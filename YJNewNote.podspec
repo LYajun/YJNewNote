@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJNewNote'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of YJNewNote.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,21 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lyj/YJNewNote'
+  s.homepage         = 'https://github.com/LYajun/YJNewNote'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lyj' => 'liuyajun1999@icloud.com' }
-  s.source           = { :git => 'https://github.com/lyj/YJNewNote.git', :tag => s.version.to_s }
+  s.author           = { 'LYajun' => 'liuyajun1999@icloud.com' }
+  s.source           = { :git => 'https://github.com/LYajun/YJNewNote.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'YJNewNote/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'YJNewNote' => ['YJNewNote/Assets/*.png']
-  # }
+  s.resources = 'YJNewNote/Classes/YJNewNote.bundle'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'YJExtensions'
+  s.dependency 'Masonry'
+  s.dependency 'YJUtils'
+  s.dependency 'MJExtension'
+  s.dependency 'LGAlertHUD'
 end

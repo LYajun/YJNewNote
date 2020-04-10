@@ -1,22 +1,40 @@
 {
   "name": "YJNewNote",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "A short description of YJNewNote.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lyj/YJNewNote",
+  "homepage": "https://github.com/LYajun/YJNewNote",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "lyj": "liuyajun1999@icloud.com"
+    "LYajun": "liuyajun1999@icloud.com"
   },
   "source": {
-    "git": "https://github.com/lyj/YJNewNote.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/LYajun/YJNewNote.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YJNewNote/Classes/**/*"
+  "source_files": "YJNewNote/Classes/**/*",
+  "resources": "YJNewNote/Classes/YJNewNote.bundle",
+  "dependencies": {
+    "YJExtensions": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "YJUtils": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "LGAlertHUD": [
+
+    ]
+  }
 }

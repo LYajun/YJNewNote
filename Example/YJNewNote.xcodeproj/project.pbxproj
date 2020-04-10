@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0BEFF82E00D147135A703B15 /* Pods-YJNewNote_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNewNote_Example.release.xcconfig"; path = "Target Support Files/Pods-YJNewNote_Example/Pods-YJNewNote_Example.release.xcconfig"; sourceTree = "<group>"; };
-		106D17B6EF3F925981AD26C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		106D17B6EF3F925981AD26C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3B9EB11CB66E58E2D19B1B98 /* Pods-YJNewNote_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNewNote_Example.debug.xcconfig"; path = "Target Support Files/Pods-YJNewNote_Example/Pods-YJNewNote_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		52E72F1913FE933E2242634E /* Pods_YJNewNote_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJNewNote_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* YJNewNote_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJNewNote_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CF1B7BB7C640002BDBB7218 /* Pods-YJNewNote_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNewNote_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YJNewNote_Tests/Pods-YJNewNote_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDAE44F5C978E50C62841004 /* Pods_YJNewNote_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJNewNote_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0E7FAED90FBFF9005382B06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D94566B06617CE1CE1137511 /* YJNewNote.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJNewNote.podspec; path = ../YJNewNote.podspec; sourceTree = "<group>"; };
+		C0E7FAED90FBFF9005382B06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D94566B06617CE1CE1137511 /* YJNewNote.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJNewNote.podspec; path = ../YJNewNote.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				9CF1B7BB7C640002BDBB7218 /* Pods-YJNewNote_Tests.debug.xcconfig */,
 				7A71C4BABA93B133F7CD0F3F /* Pods-YJNewNote_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lyj;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Z35S33J39R;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +349,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YJNewNote_Example/Pods-YJNewNote_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGAlertHUD/LGAlertHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YJExtensions/YJExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/YJNewNote/YJNewNote.framework",
+				"${BUILT_PRODUCTS_DIR}/YJUtils/YJUtils.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGAlertHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJNewNote.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJUtils.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +507,7 @@
 			baseConfigurationReference = 3B9EB11CB66E58E2D19B1B98 /* Pods-YJNewNote_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJNewNote/YJNewNote-Prefix.pch";
 				INFOPLIST_FILE = "YJNewNote/YJNewNote-Info.plist";
@@ -510,6 +524,7 @@
 			baseConfigurationReference = 0BEFF82E00D147135A703B15 /* Pods-YJNewNote_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJNewNote/YJNewNote-Prefix.pch";
 				INFOPLIST_FILE = "YJNewNote/YJNewNote-Info.plist";
