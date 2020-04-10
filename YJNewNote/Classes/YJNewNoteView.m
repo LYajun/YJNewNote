@@ -159,12 +159,15 @@
     return NO;
 }
 - (void)cancelClickAction{
+    [self.textView resignFirstResponder];
     if (!self.emptyText) {
         __weak typeof(self) weakSelf = self;
         [[YJLancooAlert lancooAlertWithTitle:@"温馨提示" msg:@"是否放弃此次编辑内容？" cancelTitle:@"我再想想" destructiveTitle:@"放弃" cancelBlock:^{
        } destructiveBlock:^{
            [weakSelf hide];
        }] show];
+    }else{
+        [self hide];
     }
 }
 - (void)saveClickAction{

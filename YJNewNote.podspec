@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJNewNote'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of YJNewNote.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YJNewNote/Classes/**/*'
+  s.source_files = 'YJNewNote/Classes/*.{h,m}'
   s.resources = 'YJNewNote/Classes/YJNewNote.bundle'
 
   s.dependency 'YJExtensions'

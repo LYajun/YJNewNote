@@ -1,6 +1,6 @@
 {
   "name": "YJNewNote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "A short description of YJNewNote.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LYajun/YJNewNote",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/LYajun/YJNewNote.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YJNewNote/Classes/**/*",
+  "source_files": "YJNewNote/Classes/*.{h,m}",
   "resources": "YJNewNote/Classes/YJNewNote.bundle",
   "dependencies": {
     "YJExtensions": [
